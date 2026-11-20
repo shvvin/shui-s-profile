@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Lobster&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fraunces', Georgia, serif;
+    background-color: #fff5f8;
+
+    /* Pink polka dot background */
+    background-image: radial-gradient(#f4bfd0 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+
+    color: #634653;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+
+/* HEADINGS */
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+    color: #d47798;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px dotted #e9a6bd;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+header {
+    background-color: #ffe0eb;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 4px dotted #e9a6bd;
+}
+
+header p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.kaomoji {
+    color: #d47798;
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+
+
+/* MAIN CONTENT */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: #fffafd;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #f3c4d4;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(180, 110, 140, 0.08);
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #f5c6d7;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+.about-container p {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+/* THINGS I LOVE */
+ul {
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: #d47798;
+}
+
+
+.project {
+    background-color: #fff0f5;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-left: 5px solid #e9a6bd;
+    border-radius: 10px;
+}
+
+.project small {
+    color: #a47788;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #ffe0eb;
+    text-align: center;
+    padding: 2rem;
+    border-top: 4px dotted #e9a6bd;
+}
+
+footer a {
+    color: #c45f83;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        padding: 0.8rem;
+    }
+
+    section {
+        padding: 1.2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 160px;
+    }
+
+    .project {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,195 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fff0f5;
+
+    /* Pink polka dot background */
+    background-image: radial-gradient(
+        #f3c4d7 1.8px,
+        transparent 1.8px
+    );
+
+    background-size: 25px 25px;
+
+    color: #593d4a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* ୨୧ HEADER ୨୧ */
+
+header {
+    background-color: #f8d7e5;
+    color: #593d4a;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 3px dashed #dfa8bf;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #a64d75;
+}
+
+header h1::before {
+    content: "୨୧ ";
+}
+
+header h1::after {
+    content: " ୨୧";
+}
+
+header p {
+    font-size: 1rem;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* ୨୧ MAIN CONTENT ୨୧ */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+/* ୨୧ SECTIONS ୨୧ */
+
+section {
+    background-color: rgba(255, 255, 255, 0.96);
+    margin-bottom: 1.8rem;
+    padding: 1.8rem;
+    border: 2px solid #f3c8d9;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(166, 77, 117, 0.10);
+}
+
+/* ୨୧ HEADINGS ୨୧ */
+
+h2 {
+    color: #b45f83;
+    font-size: 1.8rem;
+    border-bottom: 2px dashed #edc0d2;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: " ୨୧";
+}
+
+/* ୨୧ ABOUT ME FLEXBOX ୨୧ */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f3c8d9;
+    padding: 4px;
+    background-color: white;
+}
+
+/* ୨୧ PASSION PROJECTS ୨୧ */
+
+.project {
+    background-color: #fff5f8;
+    padding: 1.2rem;
+    margin: 1.2rem 0;
+    border: 1px dashed #eab6cc;
+    border-radius: 15px;
+}
+
+.project h3 {
+    color: #a64d75;
+    font-size: 1.3rem;
+}
+
+.project h3::before {
+    content: "♡ ";
+}
+
+.project small {
+    color: #765363;
+    font-size: 0.9rem;
+}
+
+/* ୨୧ THINGS I LOVE ୨୧ */
+
+li {
+    padding: 0.3rem;
+}
+
+li::marker {
+    color: #c56b91;
+}
+
+/* ୨୧ FOOTER ୨୧ */
+
+footer {
+    background-color: #f8d7e5;
+    color: #593d4a;
+    text-align: center;
+    padding: 2rem;
+    border-top: 3px dashed #dfa8bf;
+}
+
+footer h2 {
+    color: #a64d75;
+}
+
+footer a {
+    color: #80405e;
+    font-weight: bold;
+}
+
+/* ୨୧ DECORATIVE ENDING ୨୧ */
+
+footer::after {
+    content: "( ˶ˆᗜˆ˵ ) ♡ ୨୧";
+    display: block;
+    color: #a64d75;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* ୨୧ MOBILE RESPONSIVE ୨୧ */
+
+@media (max-width: 600px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
